@@ -17,6 +17,8 @@ export default function Newsletter() {
   const {data} = fetcher;
   const subscribeSuccess = data?.subscriber;
   const subscribeError = data?.error;
+  console.log(data);
+  console.log({subscribeSuccess, subscribeError, subscribedToNewsletter});
 
   return (
     <div>

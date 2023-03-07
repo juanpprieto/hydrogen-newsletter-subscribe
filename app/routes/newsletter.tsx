@@ -120,6 +120,7 @@ async function returnSuccess({
 }
 
 function returnError({error}: {error: {message: string}}) {
+  console.error(error.message);
   return json({subscriber: null, error});
 }
 
